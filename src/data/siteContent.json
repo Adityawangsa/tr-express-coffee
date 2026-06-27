@@ -1,0 +1,208 @@
+{
+  "_comment": "Data konten statis untuk halaman TR Express Coffee. File ini membantu App.jsx tetap fokus pada layout dan interaksi.",
+  "navigation": {
+    "_comment": "Daftar link navigasi utama yang dipakai di header, menu mobile, dan footer.",
+    "items": [
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Team", "href": "#team" },
+      { "label": "Lokasi", "href": "#lokasi" }
+    ]
+  },
+  "menuCategories": {
+    "_comment": "Kategori filter untuk section menu. Nilai kategori harus sesuai dengan category pada menuItems.",
+    "items": ["Semua", "Coffee", "Non Coffee", "Food"]
+  },
+  "menuItems": {
+    "_comment": "Daftar produk yang ditampilkan pada section menu beserta kategori, harga, label, deskripsi, dan gambar.",
+    "items": [
+      {
+        "name": "Garasi Aren Latte",
+        "category": "Coffee",
+        "price": "24K",
+        "tag": "Best seller",
+        "description": "Espresso house blend, susu segar, dan gula aren smoky.",
+        "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Manual Brew Kintamani",
+        "category": "Coffee",
+        "price": "28K",
+        "tag": "Single origin",
+        "description": "Profil citrus ringan dengan body bersih untuk slow morning.",
+        "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Matcha Cloud",
+        "category": "Non Coffee",
+        "price": "27K",
+        "tag": "New",
+        "description": "Matcha creamy, vanilla foam, dan aftertaste yang lembut.",
+        "image": "https://images.unsplash.com/photo-1515823662972-da6a2e4d3002?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Smoked Beef Toast",
+        "category": "Food",
+        "price": "32K",
+        "tag": "Brunch",
+        "description": "Toast tebal, beef asap, keju leleh, dan pickled onion.",
+        "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Cold Brew Citrus",
+        "category": "Coffee",
+        "price": "29K",
+        "tag": "Iced",
+        "description": "Cold brew 12 jam dengan sentuhan jeruk segar dan aftertaste ringan.",
+        "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Espresso Tonic",
+        "category": "Coffee",
+        "price": "30K",
+        "tag": "Fresh",
+        "description": "Espresso pekat dipadukan tonic water untuk rasa sparkling yang bersih.",
+        "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Mocha Hazelnut",
+        "category": "Coffee",
+        "price": "31K",
+        "tag": "Sweet",
+        "description": "Espresso, cokelat, dan hazelnut dengan tekstur creamy yang nyaman.",
+        "image": "https://images.unsplash.com/photo-1579888071069-c107a6f79d82?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Strawberry Lychee Tea",
+        "category": "Non Coffee",
+        "price": "25K",
+        "tag": "Fruity",
+        "description": "Teh dingin dengan stroberi, leci, dan aroma floral yang ringan.",
+        "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Chocolate Sea Salt",
+        "category": "Non Coffee",
+        "price": "26K",
+        "tag": "Creamy",
+        "description": "Cokelat pekat dengan sea salt cream untuk rasa manis gurih seimbang.",
+        "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Lemon Mint Cooler",
+        "category": "Non Coffee",
+        "price": "23K",
+        "tag": "Refresh",
+        "description": "Lemon, mint, dan soda ringan untuk pilihan segar di siang hari.",
+        "image": "https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Chicken Pesto Croissant",
+        "category": "Food",
+        "price": "35K",
+        "tag": "Savory",
+        "description": "Croissant flaky dengan ayam panggang, pesto, dan keju mozzarella.",
+        "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "name": "Banana Caramel Waffle",
+        "category": "Food",
+        "price": "34K",
+        "tag": "Dessert",
+        "description": "Waffle hangat dengan pisang, caramel sauce, dan taburan almond.",
+        "image": "https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  "experiences": {
+    "_comment": "Daftar aktivitas atau fasilitas brand. iconName dipakai App.jsx untuk memilih icon dari lucide-react.",
+    "items": [
+      {
+        "title": "Live Music",
+        "description": "Sesi akustik Jumat malam untuk suasana santai setelah kerja.",
+        "iconName": "Music2",
+        "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "title": "Workshop Brewing",
+        "description": "Belajar menyeduh kopi rumahan dengan metode praktis.",
+        "iconName": "Coffee",
+        "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80"
+      },
+      {
+        "title": "Coworking Corner",
+        "description": "Wi-Fi cepat, stop kontak, dan meja komunal untuk fokus.",
+        "iconName": "Wifi",
+        "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80"
+      }
+    ]
+  },
+  "team": {
+    "_comment": "Data anggota tim yang ditampilkan pada section People behind the bar.",
+    "items": [
+      {
+        "name": "Sarah Salsabila",
+        "role": "Community Manager",
+        "quote": "Membangun ruang yang ramah untuk ide kecil tumbuh.",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        "name": "Adityawangsa",
+        "role": "Head Barista",
+        "quote": "Setiap cup harus punya rasa yang konsisten dan jujur.",
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=700&q=80"
+      },
+      {
+        "name": "Prita Lauren Tina",
+        "role": "Senior Barista",
+        "quote": "Service yang baik dimulai dari mendengar pelanggan.",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80"
+      }
+    ]
+  },
+  "stats": {
+    "_comment": "Angka ringkas untuk hero section, dipakai sebagai trust signal cepat.",
+    "items": [
+      { "value": "4.8/5", "label": "rating pelanggan" },
+      { "value": "18+", "label": "event komunitas" },
+      { "value": "08-22", "label": "jam operasional" }
+    ]
+  },
+  "timeline": {
+    "_comment": "Cerita perjalanan brand pada section About us.",
+    "items": [
+      { "year": "2016", "text": "Dimulai dari garasi kecil" },
+      { "year": "2020", "text": "Membuka community space" },
+      { "year": "2023", "text": "Merilis house blend" },
+      { "year": "2026", "text": "Menjadi rumah bagi komunitas kreatif" }
+    ]
+  },
+  "testimonials": {
+    "_comment": "Review pelanggan untuk social proof pada section Testimonials.",
+    "items": [
+      {
+        "name": "Nadia",
+        "role": "Freelance Designer",
+        "text": "Tempatnya tenang untuk kerja, tapi tetap hangat untuk ngobrol setelah jam fokus."
+      },
+      {
+        "name": "Raka",
+        "role": "Founder Komunitas",
+        "text": "Event kecil kami dibantu dengan rapi. Kopinya konsisten dan timnya responsif."
+      },
+      {
+        "name": "Mira",
+        "role": "Coffee Enthusiast",
+        "text": "Manual brewnya clean. Baristanya mau jelasin proses tanpa terasa menggurui."
+      }
+    ]
+  },
+  "featureHighlights": {
+    "_comment": "Tiga highlight pendek yang menjelaskan nilai halaman satu halaman ini.",
+    "items": [
+      "Single page tanpa routing, cocok untuk portfolio.",
+      "Data-driven UI agar mudah di-maintain.",
+      "CTA jelas untuk menu, lokasi, dan WhatsApp."
+    ]
+  }
+}
