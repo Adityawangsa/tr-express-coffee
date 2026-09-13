@@ -1,17 +1,15 @@
+import { BottomMobileNav, Footer, Header } from "./components/layout";
 import {
   AboutSection,
-  BottomMobileNav,
   ExperienceSection,
   FeatureHighlights,
-  Footer,
-  Header,
   HeroSection,
   LocationSection,
   MenuSection,
-  SplashScreen,
   TeamSection,
   TestimonialsSection,
-} from "./components/SiteSections";
+} from "./components/sections";
+import { SplashScreen } from "./components/ui";
 
 function App() {
   return (
