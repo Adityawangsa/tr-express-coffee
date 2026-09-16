@@ -15,7 +15,7 @@ export function BottomMobileNav() {
         className="flex items-center justify-center gap-2 rounded-full px-3 py-3 text-xs font-black text-stone-700"
       >
         <MapPin size={16} aria-hidden="true" />
-        Maps
+        Lokasi
       </a>
       <a
         href="https://wa.me/6281554223866"

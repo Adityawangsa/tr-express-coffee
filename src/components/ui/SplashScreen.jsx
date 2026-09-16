@@ -22,7 +22,7 @@ export function SplashScreen() {
         <div className="splash-logo__mark">
           <Coffee size={44} strokeWidth={2.3} aria-hidden="true" />
         </div>
-        <p className="splash-logo__brand">TR Express</p>
+        <h1 className="splash-logo__brand">TR Express</h1>
         <p className="splash-logo__caption">Coffee</p>
       </div>
     </div>
