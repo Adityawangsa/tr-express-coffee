@@ -10,20 +10,25 @@ export function MenuSection() {
   const [activeCategory, setActiveCategory] = useState("Semua");
   const [visibleMenuCount, setVisibleMenuCount] = useState(MENU_PREVIEW_LIMIT);
 
+  // useMemo akan melakukan recalculate atau perhitungan ulang hanya ketika nilai dependency berubah
   const filteredMenu = useMemo(() => {
     // jika kategori == semua, maka tampilkan semua menu, jika tidak, maka tampilkan menu berdasarkan kategori yang dipilih
     if (activeCategory === "Semua") return menuItems.items;
     return menuItems.items.filter((item) => item.category === activeCategory);
   }, [activeCategory]);
 
+  // mengambil data yang akan ditampilkan
   const displayedMenu = filteredMenu.slice(0, visibleMenuCount);
+  // button "tampilkan lebih" akan muncul jika masih ada data yang belum ditampilkan
   const shouldShowMoreButton = filteredMenu.length > visibleMenuCount;
+  
+  // hitung sisa data yang belum ditampilkan
   const remainingMenuCount = filteredMenu.length - visibleMenuCount;
+  // tampilkan data sesuai dengan data yang belum ditampilkan atau sesuai dengan MENU_PREVIEW_LIMIT
   const nextMenuCount = Math.min(MENU_PREVIEW_LIMIT, remainingMenuCount);
 
   function handleCategoryChange(category) {
     setActiveCategory(category);
-    setVisibleMenuCount(MENU_PREVIEW_LIMIT);
   }
 
   function handleShowMoreMenu() {
