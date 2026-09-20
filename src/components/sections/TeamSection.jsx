@@ -7,6 +7,7 @@ export function TeamSection() {
   return (
     <section id="team" className="px-4 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
+        {/* Judul section */}
         <SectionHeading
           eyebrow="People behind the bar"
           title="Tim kecil yang menjaga rasa dan pengalaman."
@@ -14,6 +15,7 @@ export function TeamSection() {
           align="center"
         />
 
+        {/* Team cards grid */}
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {team.items.map((person) => (
             <article

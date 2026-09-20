@@ -12,6 +12,7 @@ export function Header() {
       {/* Container utama header agar konten dapat terpusat dan lebar maksimal tetap terjaga */}
       <div className="mx-auto max-w-6xl">
         <nav className="flex items-center justify-between rounded-full border border-white/70 bg-white/85 px-4 py-3 shadow-[0_18px_60px_rgba(53,36,23,0.12)] backdrop-blur-xl">
+          {/* Desktop */}
           {/* Logo website */}
           <a href="#home" className="flex items-center gap-3" aria-label="TR Express Coffee home">
             <span className="grid size-10 place-items-center rounded-full bg-emerald-950 text-white">
@@ -27,6 +28,7 @@ export function Header() {
             </span>
           </a>
 
+          {/* Desktop */}
           {/* Grup tautan navigasi untuk layar desktop */}
           <div className="hidden items-center gap-1 rounded-full bg-stone-100 p-1 md:flex">
             {/* Menampikan list navigasi dengan loop */}
@@ -41,6 +43,7 @@ export function Header() {
             ))}
           </div>
 
+          {/* Desktop */}
           {/* Call to Action */}
           <a
             href="https://wa.me/6281554223866"

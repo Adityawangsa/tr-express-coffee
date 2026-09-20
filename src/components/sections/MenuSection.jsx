@@ -34,22 +34,24 @@ export function MenuSection() {
     <section id="menu" className="px-4 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-8 md:gap-10 lg:grid-cols-[0.85fr_1.15fr] md:items-end">
+          {/* Judul section */}
           <SectionHeading
             eyebrow="Signature menu"
             title="Menu unggulan yang langsung membantu pengunjung memilih."
             description="Section ini menambah nilai bisnis karena pengunjung tidak hanya melihat suasana, tapi juga tahu produk apa yang paling layak dicoba."
           />
+
+          {/* Tombol kategori */}
           <div className="flex flex-wrap justify-start gap-2 md:justify-end">
             {menuCategories.items.map((category) => (
               <button
                 key={category}
                 type="button"
                 onClick={() => handleCategoryChange(category)}
-                className={`rounded-full px-5 py-3 text-sm font-bold transition ${
-                  activeCategory === category
-                    ? "bg-emerald-950 text-white shadow-lg shadow-emerald-950/15"
-                    : "border border-stone-300 bg-white text-stone-700 hover:border-emerald-900 hover:text-emerald-900"
-                }`}
+                className={`rounded-full px-5 py-3 text-sm font-bold transition ${activeCategory === category
+                  ? "bg-emerald-950 text-white shadow-lg shadow-emerald-950/15"
+                  : "border border-stone-300 bg-white text-stone-700 hover:border-emerald-900 hover:text-emerald-900"
+                  }`}
               >
                 {category}
               </button>
@@ -57,6 +59,7 @@ export function MenuSection() {
           </div>
         </div>
 
+        {/* Menu cards grid */}
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
           {displayedMenu.map((item) => (
             <article
@@ -86,7 +89,7 @@ export function MenuSection() {
           ))}
         </div>
 
-        {/* Menampilkan data yang masih banyak */}
+        {/* Menampilkan tombol jika masih ada data yang belum ditampilkan */}
         {shouldShowMoreButton && (
           <div className="mt-10 flex justify-center">
             <button
