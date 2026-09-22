@@ -8,7 +8,7 @@ export function SplashScreen() {
 
   useEffect(() => {
     const splashTimer = window.setTimeout(() => {
-      setIsVisible(false);
+      setIsVisible((current) => !current);
     }, SPLASH_DURATION_MS);
 
     return () => window.clearTimeout(splashTimer);

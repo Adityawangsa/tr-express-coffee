@@ -21,7 +21,7 @@ export function MenuSection() {
   const displayedMenu = filteredMenu.slice(0, visibleMenuCount);
   // button "tampilkan lebih" akan muncul jika masih ada data yang belum ditampilkan
   const shouldShowMoreButton = filteredMenu.length > visibleMenuCount;
-  
+
   // hitung sisa data yang belum ditampilkan
   const remainingMenuCount = filteredMenu.length - visibleMenuCount;
   // tampilkan data sesuai dengan data yang belum ditampilkan atau sesuai dengan MENU_PREVIEW_LIMIT
@@ -53,7 +53,7 @@ export function MenuSection() {
                 key={category}
                 type="button"
                 onClick={() => handleCategoryChange(category)}
-                className={`rounded-full px-5 py-3 text-sm font-bold transition ${activeCategory === category
+                className={`cursor-pointer rounded-full px-5 py-3 text-sm font-bold transition ${activeCategory === category
                   ? "bg-emerald-950 text-white shadow-lg shadow-emerald-950/15"
                   : "border border-stone-300 bg-white text-stone-700 hover:border-emerald-900 hover:text-emerald-900"
                   }`}
@@ -100,7 +100,7 @@ export function MenuSection() {
             <button
               type="button"
               onClick={handleShowMoreMenu}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-950 px-6 py-4 text-sm font-bold text-white shadow-xl shadow-emerald-950/15 transition hover:bg-emerald-800"
+              className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-full bg-emerald-950 px-6 py-4 text-sm font-bold text-white shadow-xl shadow-emerald-950/15 transition hover:bg-emerald-800"
             >
               Tampilkan {nextMenuCount} menu lainnya
               <ChevronRight size={17} aria-hidden="true" />
