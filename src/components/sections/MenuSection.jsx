@@ -53,7 +53,7 @@ export function MenuSection() {
                 key={category}
                 type="button"
                 onClick={() => handleCategoryChange(category)}
-                className={`cursor-pointer rounded-full px-5 py-3 text-sm font-bold transition ${activeCategory === category
+                className={`cursor-pointer rounded-full px-5 py-3 text-sm font-bold transition duration-100 ${activeCategory === category
                   ? "bg-emerald-950 text-white shadow-lg shadow-emerald-950/15"
                   : "border border-stone-300 bg-white text-stone-700 hover:border-emerald-900 hover:text-emerald-900"
                   }`}
