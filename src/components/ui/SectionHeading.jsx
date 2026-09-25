@@ -15,21 +15,21 @@ export function SectionHeading({
     >
       <p
         className={`mb-3 text-xs font-bold uppercase tracking-[0.22em] ${
-          isDark ? "text-[#c89b6b]" : "text-emerald-700"
+          isDark ? "text-accent" : "text-primary"
         }`}
       >
         {eyebrow}
       </p>
       <h2
-        className={`text-3xl font-semibold tracking-tight md:text-5xl ${
-          isDark ? "text-white" : "text-stone-950"
+        className={`text-3xl font-semibold tracking-tight font-hanken md:text-5xl ${
+          isDark ? "text-text-inverse" : "text-text"
         }`}
       >
         {title}
       </h2>
       <p
         className={`mt-4 text-sm leading-7 md:text-base ${
-          isDark ? "text-emerald-50/75" : "text-stone-600"
+          isDark ? "text-text-light" : "text-text-muted"
         }`}
       >
         {description}

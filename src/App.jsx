@@ -13,7 +13,7 @@ import { SplashScreen } from "./components/ui";
 
 function App() {
   return (
-    <main className="min-h-screen bg-[#f8f3eb] text-stone-900">
+    <main className="min-h-screen bg-background text-text font-inter">
       {/* SplashScreen */}
       <SplashScreen />
 

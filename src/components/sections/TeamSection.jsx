@@ -20,15 +20,15 @@ export function TeamSection() {
           {team.items.map((person) => (
             <article
               key={person.name}
-              className="overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm"
+              className="overflow-hidden rounded-3xl border border-border bg-surface shadow-sm transition hover:shadow-md"
             >
               <img src={person.image} alt={person.name} className="h-80 w-full object-cover" />
               <div className="p-6">
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-emerald-700">
+                <p className="text-sm font-bold uppercase tracking-[0.18em] text-primary">
                   {person.role}
                 </p>
-                <h3 className="mt-2 text-2xl font-black text-stone-950">{person.name}</h3>
-                <p className="mt-4 text-sm leading-7 text-stone-600">{person.quote}</p>
+                <h3 className="mt-2 text-2xl font-black text-text font-hanken">{person.name}</h3>
+                <p className="mt-4 text-sm leading-7 text-text-muted">{person.quote}</p>
               </div>
             </article>
           ))}

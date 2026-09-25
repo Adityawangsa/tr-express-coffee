@@ -31,6 +31,7 @@ export function MenuSection() {
     setActiveCategory(category);
   }
 
+  // ketika user klik tambah menu, maka jumlah batas display kartu akan ditambahkan
   function handleShowMoreMenu() {
     setVisibleMenuCount((currentCount) => currentCount + MENU_PREVIEW_LIMIT);
   }
@@ -53,10 +54,11 @@ export function MenuSection() {
                 key={category}
                 type="button"
                 onClick={() => handleCategoryChange(category)}
-                className={`cursor-pointer rounded-full px-5 py-3 text-sm font-bold transition duration-100 ${activeCategory === category
-                  ? "bg-emerald-950 text-white shadow-lg shadow-emerald-950/15"
-                  : "border border-stone-300 bg-white text-stone-700 hover:border-emerald-900 hover:text-emerald-900"
-                  }`}
+                className={`cursor-pointer rounded-full px-5 py-3 text-sm font-bold transition duration-100 ${
+                  activeCategory === category
+                    ? "bg-primary text-text-inverse shadow-lg shadow-primary/20"
+                    : "border border-border bg-surface text-text hover:border-primary hover:text-primary"
+                }`}
               >
                 {category}
               </button>
@@ -69,26 +71,28 @@ export function MenuSection() {
           {displayedMenu.map((item) => (
             <article
               key={item.name}
-              className="group overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-stone-900/10"
+              className="group overflow-hidden rounded-3xl border border-border bg-surface shadow-sm transition hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/10"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              {/* Gambar */}
+              <div className="relative aspect-4/3 overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.name}
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
-                <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-black uppercase tracking-wide text-emerald-800">
+                <span className="absolute left-4 top-4 rounded-full bg-surface/90 px-3 py-1 text-xs font-black uppercase tracking-wide text-primary shadow-sm backdrop-blur">
                   {item.tag}
                 </span>
               </div>
+              {/* Isi Konten */}
               <div className="p-5">
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className="text-lg font-black text-stone-950">{item.name}</h3>
-                  <p className="rounded-full bg-[#f1e0cc] px-3 py-1 text-sm font-black text-[#7a4f2a]">
+                  <h3 className="text-lg font-black text-text font-hanken">{item.name}</h3>
+                  <p className="rounded-full bg-primary-light px-3 py-1 text-sm font-black text-primary font-hanken">
                     {item.price}
                   </p>
                 </div>
-                <p className="mt-3 text-sm leading-6 text-stone-600">{item.description}</p>
+                <p className="mt-3 text-sm leading-6 text-text-muted">{item.description}</p>
               </div>
             </article>
           ))}
@@ -100,7 +104,7 @@ export function MenuSection() {
             <button
               type="button"
               onClick={handleShowMoreMenu}
-              className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-full bg-emerald-950 px-6 py-4 text-sm font-bold text-white shadow-xl shadow-emerald-950/15 transition hover:bg-emerald-800"
+              className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-4 text-sm font-bold text-text-inverse shadow-xl shadow-primary/20 transition hover:bg-primary-hover"
             >
               Tampilkan {nextMenuCount} menu lainnya
               <ChevronRight size={17} aria-hidden="true" />

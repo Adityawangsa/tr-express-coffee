@@ -19,16 +19,16 @@ export function TestimonialsSection() {
           {testimonials.items.map((review) => (
             <article
               key={review.name}
-              className="rounded-3xl border border-stone-200 bg-white p-6 shadow-sm"
+              className="rounded-3xl border border-border bg-surface p-6 shadow-sm transition hover:shadow-md"
             >
-              <Quote className="text-[#8b5e34]" size={28} aria-hidden="true" />
-              <p className="mt-5 text-sm leading-7 text-stone-700">"{review.text}"</p>
-              <div className="mt-6 flex items-center justify-between border-t border-stone-200 pt-5">
+              <Quote className="text-accent" size={28} aria-hidden="true" />
+              <p className="mt-5 text-sm leading-7 text-text">"{review.text}"</p>
+              <div className="mt-6 flex items-center justify-between border-t border-border pt-5">
                 <div>
-                  <p className="font-black text-stone-950">{review.name}</p>
-                  <p className="text-sm text-stone-500">{review.role}</p>
+                  <p className="font-black text-text font-hanken">{review.name}</p>
+                  <p className="text-sm text-text-light">{review.role}</p>
                 </div>
-                <div className="flex text-[#c08a4c]" aria-label="Rating 5 dari 5">
+                <div className="flex text-accent" aria-label="Rating 5 dari 5">
                   {Array.from({ length: 5 }).map((_, index) => (
                     <Star key={index} size={15} fill="currentColor" aria-hidden="true" />
                   ))}
